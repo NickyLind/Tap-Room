@@ -12,7 +12,8 @@ function NewKegForm(props) {
         name: event.target.name.value,
         type: event.target.type.value,
         price: event.target.price.value,
-        AlcoholContent: event.target.alcoholContent.value,
+        alcoholContent: event.target.alcoholContent.value,
+        pintsLeft: event.target.pintsLeft.value,
         id: v4()
       }
     );

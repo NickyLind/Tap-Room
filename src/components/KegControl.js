@@ -31,9 +31,9 @@ class KegControl extends React.Component {
   }
 
   handleBuyPint = (id) => {
-    const newMasterKegList = this.state.masterKegList.filter(keg => keg.id === id)[0];
-    if (newMasterKegList.pintsLeft >= 1) {
-      newMasterKegList.pintsLeft--;
+    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    if (selectedKeg.pintsLeft >= 1) {
+      selectedKeg.pintsLeft--;
     }
   }
 
@@ -46,7 +46,7 @@ class KegControl extends React.Component {
   }
 
   handleChangingSelectedKeg = (id) => {
-    const selectedKeg = this.state.masterKegList.filter(keg => keg, id === id)[0];
+    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
     this.setState({
       selectedKeg: selectedKeg
     });
