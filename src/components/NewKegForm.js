@@ -35,4 +35,4 @@ NewKegForm.propTypes = {
 export default NewKegForm;
 
 // need reuseable form, keg, keg details 
-// add new kegform, keg, keg details, reuseable form
+// add  keg, keg details, reuseable form
