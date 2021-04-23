@@ -11,7 +11,7 @@ function KegDetail(props) {
       <p>{keg.price}</p>
       <p>{keg.alcoholContent}</p>
       <button onClick={props.onClickingEdit}>Edit Keg</button>
-      <button onClick={() => props.onClickingDelete}>Remove Keg</button>
+      <button onClick={() => props.onClickingDelete(keg.id)}>Remove Keg</button>
       <hr />
     </React.Fragment>
   );
