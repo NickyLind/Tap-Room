@@ -7,7 +7,7 @@ function Keg(props) {
     <React.Fragment>
       <div onClick={() => props.whenKegClicked(props.id)}>
         <h3>{props.name} - Pints Left {remainingPints}</h3>
-        <button onClick={() => props}>Sell a Pint</button>
+        <button onClick={() => props.onSellPint(props.id)}>Sell a Pint</button>
         <hr />
       </div>
     </React.Fragment>
@@ -23,3 +23,5 @@ Keg.propTypes = {
   id: PropTypes.string,
   whenKegClicked: PropTypes.func
 };
+
+export default Keg;

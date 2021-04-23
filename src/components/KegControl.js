@@ -1,8 +1,9 @@
 import React from "react";
-import newKegForm from "./NewKegForm";
+import NewKegForm from "./NewKegForm";
 import KegList from "./KegList";
 import KegDetail from "./KegDetail";
 import EditKegForm from "./EditKegForm";
+import Footer from "./Footer";
 
 class KegControl extends React.Component {
   constructor(props) {
@@ -114,7 +115,7 @@ class KegControl extends React.Component {
         <Footer
           handleClick={this.handleClick}
           buttonText={buttonText}
-        />;
+        />
       </React.Fragment>
     );
   }

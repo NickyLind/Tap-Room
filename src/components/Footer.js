@@ -7,10 +7,10 @@ function Footer(props) {
       <button onClick={props.handleClick}>{props.buttonText}</button>
       <p>&copy; 2021 Nick Lindau</p>
     </React.Fragment>
-  );
+  )
 }
 
-Footer.PropTypes = {
+Footer.propTypes = {
   handleClick: PropTypes.func,
   buttonText: PropTypes.string
 };
