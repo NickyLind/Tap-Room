@@ -33,8 +33,12 @@ class KegControl extends React.Component {
   handleBuyPint = (id) => {
     const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
     if (selectedKeg.pintsLeft >= 1) {
-      selectedKeg.pintsLeft--
-      this.setState({ selectedKeg: selectedKeg })
+      selectedKeg.pintsLeft--;
+      this.setState({
+        masterKegList: this.state.masterKegList,
+        editing: false,
+        selectedKeg: null
+      })
     }
   }
 
@@ -93,7 +97,6 @@ class KegControl extends React.Component {
           keg={this.state.selectedKeg}
           onClickingDelete={this.handleDeletingKeg}
           onClickingEdit={this.handleEditClick}
-          onBuyPint={this.handleBuyPint}
         />;
       buttonText = "Return to Keg list";
     } else if (this.state.formVisibleOnPage) {
@@ -107,6 +110,7 @@ class KegControl extends React.Component {
         <KegList
           kegList={this.state.masterKegList}
           onKegSelection={this.handleChangingSelectedKeg}
+          onBuyPint={this.handleBuyPint}
         />;
       buttonText = "Add Keg";
     }
