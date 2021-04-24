@@ -7,9 +7,10 @@ function Keg(props) {
     <React.Fragment>
       <div onClick={() => props.whenKegClicked(props.id)}>
         <h3>{props.name} - Pints Left :{remainingPints}</h3>
-        <button onClick={() => props.onBuyPint(props.id)}>Sell a Pint</button>
+        {/* <button onClick={() => props.onBuyPint(props.id)}>Sell a Pint</button> */}
         <hr />
       </div>
+      <button onClick={() => props.onBuyPint(props.id)}>Sell a Pint</button>
     </React.Fragment>
   );
 }

@@ -32,8 +32,14 @@ class KegControl extends React.Component {
 
   handleBuyPint = (id) => {
     const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    // const newMasterKegList = this.state.masterKegList.filter(keg => keg.id !== this.state.selectedKeg.id).concat(id)
     if (selectedKeg.pintsLeft >= 1) {
       selectedKeg.pintsLeft--;
+      this.setState({
+        masterKegList: this.state.masterKegList,
+        editing: false,
+        selectedKeg: null
+      })
     }
   }
 
