@@ -24,6 +24,7 @@ function ReusableForm(props) {
           type="number"
           name="alcoholContent"
           placeholder="Alcohol Content"
+          step=".1"
         />
         <input
           type="hidden"

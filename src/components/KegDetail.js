@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 function KegDetail(props) {
   const { keg } = props;
+  let remainingPints = keg.pintsLeft > 0 ? keg.pintsLeft : "Out of Stock";
   return (
     <React.Fragment>
       <h1>Keg Detail</h1>
-      <h1>Keg Detail</h1>
-      <h3>{keg.name} - Pints Left: {quantity}</h3>
+      <h3>{keg.name} - Pints Left: {remainingPints}</h3>
       <h4>{keg.type}</h4>
       <p>{keg.price}$ per pint</p>
       <p>{keg.alcoholContent}% Alcohol Content</p>
