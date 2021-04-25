@@ -8,6 +8,9 @@ function App() {
     width: "500px",
     marginLeft: "auto",
     marginRight: "auto",
+    backgroundColor: "rgb(125, 125, 125)",
+    borderRadius: "12px",
+    boxShadow: "0 10px 8px rgba(0, 0, 0, 0.25)"
   }
 
   return (
