@@ -13,7 +13,6 @@ function KegDetail(props) {
       <p>{keg.alcoholContent}% Alcohol Content</p>
       <button onClick={props.onClickingEdit}>Edit Keg</button>
       <button onClick={() => props.onClickingDelete(keg.id)}>Remove Keg</button>
-      <button onClick={() => props.onBuyPint(keg.id)}>Sell a Pint</button>
       <hr />
     </React.Fragment>
   );

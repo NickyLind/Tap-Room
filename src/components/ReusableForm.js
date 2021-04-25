@@ -9,23 +9,27 @@ function ReusableForm(props) {
           type="text"
           name="name"
           placeholder="Beer Name"
+          required
         />
         <input
           type="text"
           name="type"
           placeholder="Beer Type"
+          required
         />
         <input
           type="number"
           name="price"
           placeholder="Price"
           step=".01"
+          required
         />
         <input
           type="number"
           name="alcoholContent"
           placeholder="Alcohol Content"
           step=".1"
+          required
         />
         <input
           type="hidden"
