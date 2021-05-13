@@ -50,7 +50,7 @@ Here is a diagram of how all the components are structured
 
 ## Known Bugs
 
-* _There is a bug in the console that displays a failed prop type for 'pintsLeft' when the button to sell a pint is clicked. Even if I switch the type it gives the opposite error. It doesn't affect the functionality of the applicaiton in any way but i'm not sure if that would be the case or not on a more robust project_
+* _N/A_
 
 
 ## License
